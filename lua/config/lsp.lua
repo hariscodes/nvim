@@ -3,14 +3,14 @@ local cmp_lsp_default_capabilities = require("cmp_nvim_lsp").default_capabilitie
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls', 'templ', 'html', 'htmx', 'tailwindcss', 'gopls' }
+  ensure_installed = { 'ts_ls', 'rust_analyzer', 'lua_ls', 'templ', 'html', 'htmx', 'tailwindcss', 'gopls' }
 })
 
 -- Zig
 lspconfig.zls.setup({})
 
 -- TypeScript
-lspconfig.tsserver.setup({})
+lspconfig.ts_ls.setup({})
 
 -- Rust
 lspconfig.rust_analyzer.setup({})
